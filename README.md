@@ -10,3 +10,8 @@ cd dev
 virtualenv my_env
 source my_env/bin/activate
 ```
+When done with the python env, deactivate it. 
+
+```
+deactivate
+```
