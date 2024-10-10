@@ -31,7 +31,7 @@ Install pixel package into conda environment;
 $ conda install -c conda-forge pixel
 ```
 
-Verify installation
+Verify installation;
 
 ```
 python -c "import pixel; print(pixel.__version__)"
