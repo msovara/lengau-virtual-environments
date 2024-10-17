@@ -28,7 +28,7 @@ $ conda activate my_env
 
 Install pixel package into conda environment
 ```
-$ conda install -c conda-forge pixel
+$ conda install -c conda-forge pixell
 ```
 
 Verify installation
