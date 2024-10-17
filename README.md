@@ -34,7 +34,7 @@ $ conda install -c conda-forge pixell
 Verify installation
 
 ```
-python -c "import pixel; print(pixel.__version__)"
+python -c "import pixel; print(pixell.__version__)"
 ```
 To deactivate your Conda environment, simply run
 
