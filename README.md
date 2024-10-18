@@ -41,3 +41,29 @@ To deactivate your Conda environment, simply run
 ```
 conda deactivate
 ```
+# Example Batch Script on LENGAU
+
+```
+#!/bin/bash
+#PBS -l select=1:ncpus=23:mpiprocs=23
+#PBS -P ASTR1234
+#PBS -q serial
+#PBS -l walltime=48:00:00
+#PBS -o /mnt/lustre/users/jblogs/data/job_bn_true.out
+#PBS -e /mnt/lustre/users/jblogs/data/job_bn_true.err
+#PBS -m abe
+#PBS -M jblog@csir.co.za
+
+cd /mnt/lustre/users/jblogs/data/
+
+module add chpc/BIOMODULES
+module add chpc/python/anaconda/3-2019.10
+source /apps/chpc/chem/anaconda3-2019.10/etc/profile.d/conda.sh
+
+conda activate ksz_analysis
+
+# Run program
+python paral_apert_phot.py
+
+conda deactivate
+```
