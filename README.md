@@ -26,7 +26,7 @@ $ conda create -n my_env python=3.9
 $ conda activate my_env
 ```
 
-Install pixel package into conda environment
+Install pixell package into conda environment
 ```
 $ conda install -c conda-forge pixell
 ```
